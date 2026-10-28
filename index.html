@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Free revision resources, practice questions and study guides for Nigerian students preparing for BECE, WAEC, JAMB and university admission.">
+  <title>AceBridge | Exam Prep for Nigerian Students</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><span class="brand-mark"><i class="bi bi-mortarboard-fill"></i></span>
+        Ace<span class="text-success">Bridge</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resources">Exam resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="#practice">Practice quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tutorial">Video tutorial</a></li>
+          <li class="nav-item"><a class="nav-link" href="#study-tips">Study tips</a></li>
+          <li class="nav-item ms-lg-2"><button class="btn btn-outline-success btn-sm rounded-pill px-3" id="themeToggle"
+              aria-label="Switch colour theme"><i class="bi bi-moon-stars-fill" id="themeIcon"></i></button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-section" id="home">
+      <div class="container py-5">
+        <div class="row align-items-center g-5 py-lg-4">
+          <div class="col-lg-7">
+            <span class="eyebrow"><i class="bi bi-stars me-2"></i>YOUR STUDY PARTNER</span>
+            <h1 class="display-4 fw-bold mt-3">Prepare smarter.<br><span class="text-success">Achieve
+                more.</span></h1>
+            <p class="lead text-secondary mt-3">One learning hub for Nigerian students preparing for BECE,
+              WAEC,JAMB and university admission.</p>
+            <p class="text-secondary">Find revision notes, topic guides, practice questions and study tips to help you prepare with confidence.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#resources" class="btn btn-success btn-lg rounded-pill px-4">Explore resources <i
+                  class="bi bi-arrow-right ms-2"></i></a>
+              <a href="#practice" class="btn btn-outline-dark btn-lg rounded-pill px-4">Try a practice
+                quiz</a>
+            </div>
+            <div class="hero-proof mt-4"><i class="bi bi-check-circle-fill text-success me-2"></i>Built for learners across Nigeria</div>
+          </div>
+          <div class="col-lg-5 bg-image">
+            <img src="img/Collaborative Study in Green Uniforms.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="stats-strip">
+      <div class="container">
+        <div class="row g-3 text-center">
+          <div class="col-6 col-md-3">
+            <div class="stat"><i class="bi bi-book"></i><strong>BECE</strong><span>JSS 3 revision</span></div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat"><i class="bi bi-journal-check"></i><strong>WAEC</strong><span>SS 3 revision</span></div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat"><i class="bi bi-lightning-charge"></i><strong>JAMB</strong><span>UTME practice</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat"><i class="bi bi-mortarboard"></i><strong>Admission</strong><span>University
+                guidance</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="resources">
+      <div class="container">
+        <div class="section-heading text-center mx-auto">
+          <span class="eyebrow">LEARNING LIBRARY</span>
+          <h2 class="fw-bold mt-2">What are you preparing for?</h2>
+          <p class="text-secondary">Choose your exam level and find resources to guide your revision.</p>
+        </div>
+        <div class="row g-3 align-items-center mb-4">
+          <div class="col-lg-7">
+            <div class="input-group search-box">
+              <span class="input-group-text"><i class="bi bi-search"></i></span>
+              <input type="search" id="resourceSearch" class="form-control"
+                placeholder="Search resources, subjects or topics..." aria-label="Search resources">
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="filter-buttons d-flex flex-wrap gap-2 justify-content-lg-end">
+              <button class="btn btn-sm filter-btn active" data-filter="all">All resources</button>
+              <button class="btn btn-sm filter-btn" data-filter="bece">BECE</button>
+              <button class="btn btn-sm filter-btn" data-filter="waec">WAEC</button>
+              <button class="btn btn-sm filter-btn" data-filter="jamb">JAMB</button>
+              <button class="btn btn-sm filter-btn" data-filter="admission">Admission</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4" id="resourceGrid">
+          <div class="col-md-6 col-xl-3 resource-item" data-category="bece"
+            data-search="bece jss 3 mathematics algebra geometry practice questions">
+            <article class="resource-card h-100">
+              <div class="resource-icon green"><i class="bi bi-calculator"></i></div><span
+                class="badge rounded-pill badge-soft-green">JSS 3 · BECE</span>
+              <h3>Mathematics Revision</h3>
+              <p>Review algebra, geometry, statistics and other key topics with worked examples.</p>
+              <button class="btn btn-link p-0 resource-open" data-resource="beceMath">Explore resource <i
+                  class="bi bi-arrow-right"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 resource-item" data-category="bece"
+            data-search="bece jss 3 english language grammar comprehension essay writing">
+            <article class="resource-card h-100">
+              <div class="resource-icon orange"><i class="bi bi-chat-square-text"></i></div><span
+                class="badge rounded-pill badge-soft-orange">JSS 3 · BECE</span>
+              <h3>English Language</h3>
+              <p>Practise grammar, comprehension, summary and guided writing skills.</p>
+              <button class="btn btn-link p-0 resource-open" data-resource="beceEnglish">Explore resource <i
+                  class="bi bi-arrow-right"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 resource-item" data-category="waec"
+            data-search="waec ss3 biology chemistry physics mathematics science revision">
+            <article class="resource-card h-100">
+              <div class="resource-icon blue"><i class="bi bi-flask"></i></div><span
+                class="badge rounded-pill badge-soft-blue">SS 3 · WAEC</span>
+              <h3>Science Subjects</h3>
+              <p>Organise your Biology, Chemistry and Physics revision by topic.</p>
+              <button class="btn btn-link p-0 resource-open" data-resource="waecScience">Explore resource <i
+                  class="bi bi-arrow-right"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 resource-item" data-category="waec"
+            data-search="waec ss3 english mathematics past questions revision">
+            <article class="resource-card h-100">
+              <div class="resource-icon purple"><i class="bi bi-journal-text"></i></div><span
+                class="badge rounded-pill badge-soft-purple">SS 3 · WAEC</span>
+              <h3>Core WAEC Subjects</h3>
+              <p>Plan revision for English, Mathematics and other subjects you offer.</p>
+              <button class="btn btn-link p-0 resource-open" data-resource="waecCore">Explore resource <i
+                  class="bi bi-arrow-right"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 resource-item" data-category="jamb"
+            data-search="jamb utme english use of english mathematics biology chemistry physics practice">
+            <article class="resource-card h-100">
+              <div class="resource-icon orange"><i class="bi bi-lightning-charge"></i></div><span
+                class="badge rounded-pill badge-soft-orange">JAMB · UTME</span>
+              <h3>UTME Practice</h3>
+              <p>Practise multiple-choice questions and review explanations by subject.</p>
+              <button class="btn btn-link p-0 resource-open" data-resource="jambPractice">Explore resource <i
+                  class="bi bi-arrow-right"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 resource-item" data-category="jamb"
+            data-search="jamb use of english vocabulary comprehension lexis structure">
+            <article class="resource-card h-100">
+              <div class="resource-icon green"><i class="bi bi-spellcheck"></i></div><span
+                class="badge rounded-pill badge-soft-green">JAMB · ENGLISH</span>
+              <h3>Use of English</h3>
+              <p>Build confidence in comprehension, vocabulary, lexis and structure.</p>
+              <button class="btn btn-link p-0 resource-open" data-resource="jambEnglish">Explore resource <i
+                  class="bi bi-arrow-right"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 resource-item" data-category="admission"
+            data-search="university admission aspirant course requirements post utme screening cut off marks">
+            <article class="resource-card h-100">
+              <div class="resource-icon blue"><i class="bi bi-building"></i></div><span
+                class="badge rounded-pill badge-soft-blue">ASPIRANTS</span>
+              <h3>Admission Guide</h3>
+              <p>Learn about course choices, O’level requirements and admission steps.</p>
+              <button class="btn btn-link p-0 resource-open" data-resource="admissionGuide">Explore resource <i
+                  class="bi bi-arrow-right"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 resource-item" data-category="admission"
+            data-search="university aspirant post utme screening direct entry caps jamb caps admission checklist">
+            <article class="resource-card h-100">
+              <div class="resource-icon purple"><i class="bi bi-clipboard2-check"></i></div><span
+                class="badge rounded-pill badge-soft-purple">ASPIRANTS</span>
+              <h3>Admission Checklist</h3>
+              <p>Keep track of registration, screening, documents and official updates.</p>
+              <button class="btn btn-link p-0 resource-open" data-resource="admissionChecklist">Explore resource <i
+                  class="bi bi-arrow-right"></i></button>
+            </article>
+          </div>
+        </div>
+        <p class="text-center text-secondary mt-4 d-none" id="noResults">No matching resources found. Try another
+          keyword or category.</p>
+      </div>
+    </section>
+
+    <section class="practice-section section-padding" id="practice">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="eyebrow">TEST YOURSELF</span>
+            <h2 class="fw-bold mt-2">Small practice.<br><span class="text-success">Big progress.</span></h2>
+            <p class="text-secondary">Try this sample question to see how practice quizzes can work on the site. More
+              questions can be added for each subject and exam level.</p>
+            <div class="d-flex gap-3 align-items-center">
+              <div class="quiz-badge"><i class="bi bi-patch-question"></i></div>
+              <div><strong>Instant feedback</strong>
+                <div class="text-secondary small">See your result immediately.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="quiz-card">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="badge text-bg-success">Sample · Mathematics</span>
+
+                  <span class="small text-secondary" id="questionCounter">
+                    Question 1 of 5
+                  </span>
+                </div>
+              </div>
+              <div class="progress mb-4" role="progressbar" aria-label="Quiz progress" aria-valuenow="33"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" id="quizProgress" style="width:33%"></div>
+              </div>
+              <h3 class="h5 fw-bold mb-3" id="questionText">Solve for x: 2x + 6 = 14.</h3>
+              <div id="answerOptions" class="answer-options">
+                <button class="answer-option" data-answer="0">A. 3</button>
+                <button class="answer-option" data-answer="1">B. 4</button>
+                <button class="answer-option" data-answer="2">C. 5</button>
+                <button class="answer-option" data-answer="3">D. 10</button>
+              </div>
+              <div id="quizFeedback" class="quiz-feedback mt-3" aria-live="polite"></div>
+              <div class="d-flex justify-content-between mt-4"><span class="small text-secondary" id="scoreText">Score:
+                  0</span><button class="btn btn-success rounded-pill px-4" id="nextQuestion" disabled>Next question <i
+                    class="bi bi-arrow-right ms-1"></i></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tutorial-section" id="tutorial">
+      <div class="container-fluid px-lg-5">
+        <div class="text-center section-padding">
+          <h1>Pass Your Exam in One Sitting</h1>
+          <p> Expert-led videos, interactive quizzes and realistic mock exams for WAEC and JAMB, built to help you
+            succeed on your first try. </p>
+        </div>
+
+        <div class="video-wrapper"> <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous videos"> <i
+              class="bi bi-chevron-left"></i> </button>
+
+          <div class="video-container" id="videoContainer"> <!-- Video 1 -->
+            <div class="video-card"> <a
+                href="https://www.youtube.com/results?search_query=JAMB+Economics+Demand+and+Supply+tutorial"
+                target="_blank" rel="noopener noreferrer" class="video-image"> <img
+                  src="img/photo-1454165804606-c3d57bc86b40.avif" alt="Economics lesson"> <span
+                  class="subject-badge">ECONOMICS</span> <span class="exam-badge">JAMB</span> <span class="play-btn"> <i
+                    class="bi bi-play-fill"></i> </span> </a>
+              <div class="card-body-custom">
+                <h5>Introduction to Demand and Supply</h5>
+                <p>Economics • JAMB Preparation</p>
+              </div>
+            </div>
+
+            <div class="video-card"> <a
+                href="https://www.youtube.com/results?search_query=WAEC+Financial+Accounting+concepts+and+conventions+tutorial"
+                target="_blank" rel="noopener noreferrer" class="video-image"> <img
+                  src="img/photo-1554224155-6726b3ff858f.avif" alt="Accounting lesson"> <span
+                  class="subject-badge">ACCOUNTING</span> <span class="exam-badge">WAEC</span> <span class="play-btn">
+                  <i class="bi bi-play-fill"></i> </span> </a>
+              <div class="card-body-custom">
+                <h5>Accounting Concepts and Conventions</h5>
+                <p>Financial Accounting • WAEC</p>
+              </div>
+            </div>
+
+            <div class="video-card"> <a
+                href="https://www.youtube.com/results?search_query=JAMB+Mathematics+Number+Bases+tutorial"
+                target="_blank" rel="noopener noreferrer" class="video-image"> <img
+                  src="img/photo-1509228468518-180dd4864904.avif" alt="Mathematics lesson"> <span
+                  class="subject-badge">MATHEMATICS</span> <span class="exam-badge">JAMB</span> <span class="play-btn">
+                  <i class="bi bi-play-fill"></i> </span> </a>
+              <div class="card-body-custom">
+                <h5>Introduction to Number Bases</h5>
+                <p>Mathematics • JAMB Preparation</p>
+              </div>
+            </div>
+
+            <div class="video-card"> <a
+                href="https://www.youtube.com/results?search_query=WAEC+English+Language+Adverbial+Phrases+tutorial"
+                target="_blank" rel="noopener noreferrer" class="video-image"> <img
+                  src="img/photo-1509062522246-3755977927d7.avif"> <span class="subject-badge">ENGLISH</span> <span
+                  class="exam-badge">WAEC</span>
+                <span class="play-btn"> <i class="bi bi-play-fill"></i> </span> </a>
+              <div class="card-body-custom">
+                <h5>English Grammar and Adverbial Phrases</h5>
+                <p>English Language • WAEC</p>
+              </div>
+            </div>
+
+            <div class="video-card"> <a
+                href="https://www.youtube.com/results?search_query=JAMB+Chemistry+Atomic+Structure+tutorial"
+                target="_blank" rel="noopener noreferrer" class="video-image"> <img
+                  src="img/photo-1532094349884-543bc11b234d.avif" alt="Chemistry lesson"> <span
+                  class="subject-badge">CHEMISTRY</span> <span class="exam-badge">JAMB</span> <span class="play-btn"> <i
+                    class="bi bi-play-fill"></i> </span> </a>
+              <div class="card-body-custom">
+                <h5>Introduction to Atomic Structure</h5>
+                <p>Chemistry • JAMB Preparation</p>
+              </div>
+            </div>
+
+            <div class="video-card"> <a
+                href="https://www.youtube.com/results?search_query=WAEC+Physics+Electricity+past+questions+solutions"
+                target="_blank" rel="noopener noreferrer" class="video-image"> <img
+                  src="img/photo-1635070041078-e363dbe005cb.avif" alt="Physics lesson"> <span
+                  class="subject-badge">PHYSICS</span> <span class="exam-badge">WAEC</span>
+                <span class="play-btn"> <i class="bi bi-play-fill"></i> </span> </a>
+              <div class="card-body-custom">
+                <h5>Electricity and Basic Circuits</h5>
+                <p>Physics • WAEC Preparation</p>
+              </div>
+            </div>
+          </div> <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next videos"> <i
+              class="bi bi-chevron-right"></i> </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding faq-section">
+      <div class="container">
+        <div class="faq-heading text-center">
+          <h1>Frequently Asked Questions</h1>
+          <p>
+            Everything you need to know about preparing
+            with AceBridge.
+          </p>
+        </div>
+        <!-- Bootstrap Accordion -->
+        <div class="accordion faq-accordion" id="faqAccordion">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">
+                Which exams does AceBridge cover?
+              </button>
+            </h2>
+            <div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                AceBridge helps students prepare for
+                JAMB, WAEC, NECO, SAT and IELTS through
+                video lessons, practice questions and
+                exam preparation resources.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                How many past questions are available
+                on the platform?
+              </button>
+            </h2>
+            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Students can practise with available
+                past questions across different subjects.
+                The number of questions depends on the
+                subjects and exams provided on the platform.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                Is AceBridge available as a mobile app?
+              </button>
+            </h2>
+            <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                You can access the website using your
+                phone's browser. A dedicated mobile app
+                is not confirmed yet.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                How is AceBridge different from
+                other exam prep platforms?
+              </button>
+            </h2>
+            <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                AceBridge brings video lessons,
+                practice questions, revision materials
+                and mock exams together to help students
+                prepare for their examinations in one place.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
+                Can I try the platform for free?
+              </button>
+            </h2>
+            <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                You can provide free sample lessons or
+                practice questions for students to try.
+                Please check the platform's current pricing
+                and access options for the available free
+                features.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqSix" aria-expanded="false" aria-controls="faqSix">
+                How can I score 300 and above in JAMB?
+              </button>
+            </h2>
+            <div id="faqSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Start by understanding the JAMB syllabus for your subjects. Study
+                consistently,practise past questions, take timed mock
+                exams and review your mistakes.
+                Focus on improving your speed and accuracy.
+                A score of 300 and above is a goal, not
+                a guaranteed result.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-padding" id="study-tips">
+      <div class="container">
+        <div class="section-heading text-center mx-auto"><span class="eyebrow">STUDY SMARTER</span>
+          <h2 class="fw-bold mt-2">Build a revision routine</h2>
+          <p class="text-secondary">A few simple habits can make preparation more manageable.</p>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-4">
+            <div class="tip-card"><span>01</span>
+              <h3>Make a timetable</h3>
+              <p>Set realistic daily goals and give extra time to topics you find difficult.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="tip-card"><span>02</span>
+              <h3>Practise actively</h3>
+              <p>Attempt questions without checking the answer first, then review your mistakes.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="tip-card"><span>03</span>
+              <h3>Verify information</h3>
+              <p>Check exam dates, admission requirements and registration details on official websites.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container py-5 text-center">
+        <div class="cta-icon"><i class="bi bi-mortarboard-fill"></i></div>
+        <h2 class="fw-bold mt-3">Your future is worth preparing for.</h2>
+        <p class="text-secondary mx-auto">Start with one topic today. Keep practising, track your progress and ask
+          questions when you need help.</p>
+        <a href="#resources" class="btn btn-success rounded-pill px-4 mt-2">Start learning <i
+            class="bi bi-arrow-up-right ms-1"></i></a>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container px-lg-5">
+        <div class="row align-items-center g-5"> <!-- LEFT SIDE: ABOUT TEXT -->
+          <div class="col-lg-6"> <span class="about-label"> ABOUT ACEBRIDGE ACADEMY </span>
+            <h1 class="about-title"> Built to close the education gap in West Africa </h1>
+            <p> AceBridge Academy was built to make quality education and exam preparation more accessible to students
+              across Nigeria and West Africa. We use technology to help students access learning resources wherever they
+              are. </p>
+            <p> Our platform helps students preparing for JAMB UTME, WAEC SSCE, NECO and other examinations with useful
+              study materials, video lessons and practice questions. </p>
+            <p> From Mathematics and Physics to English Language and Economics, our learning resources are designed to
+              help students study smarter, practise regularly and prepare confidently for their examinations. </p> <a
+              href="#courses" class="about-btn"> Start Learning </a>
+          </div> <!-- RIGHT SIDE: STATISTICS -->
+          <div class="col-lg-6">
+            <div class="row g-3"> <!-- CARD 1 -->
+              <div class="col-md-6 col-6">
+                <div class="stat-card">
+                  <h2>JAMB</h2>
+                  <p> UTME exam preparation resources </p>
+                </div>
+              </div> <!-- CARD 2 -->
+              <div class="col-md-6 col-6">
+                <div class="stat-card">
+                  <h2>WAEC</h2>
+                  <p> Study materials and revision lessons </p>
+                </div>
+              </div> <!-- CARD 3 -->
+              <div class="col-md-6 col-6">
+                <div class="stat-card">
+                  <h2>NECO</h2>
+                  <p> Learning resources for exam preparation </p>
+                </div>
+              </div> <!-- CARD 4 -->
+              <div class="col-md-6 col-6">
+                <div class="stat-card">
+                  <h2>24/7</h2>
+                  <p> Learn at your own pace, anytime </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- <footer class="site-footer">
+    <div class="container py-4">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-6"><a class="navbar-brand fw-bold" href="#"><span class="brand-mark"><i
+                class="bi bi-mortarboard-fill"></i></span> Study<span class="text-success">Naija</span></a>
+          <p class="small text-secondary mb-0 mt-2">A student-focused learning hub for exam preparation.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <div class="footer-links"><a href="#resources">Resources</a><a href="#practice">Practice</a><a
+              href="#study-tips">Study tips</a></div><small class="text-secondary d-block mt-2">© <span
+              id="year"></span> StudyNaija. Independent educational project.</small>
+        </div>
+      </div>
+      <p class="disclaimer small text-secondary mt-3 mb-0">StudyNaija is not affiliated with WAEC, JAMB or any
+        examination body. Confirm official exam and admission information with the relevant organisations. Only upload
+        or share learning materials you have permission to distribute.</p>
+    </div>
+  </footer> -->
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row footer-row">
+        <div class="col-lg-3 col-md-6 col-12 footer-column">
+          <h5>AceBridge</h5>
+          <p> AceBridge<br> Lagos, Nigeria </p>
+          <p> <a href="tel:+2348152033330"> +234 815 203 3330 </a> </p>
+          <p> <a href="mailto:info@acebridge.example"> acebridge@gmail.com </a> </p> <!-- SOCIAL ICONS -->
+          <div class="social-icons"> <a href="#" aria-label="X"> <i class="bi bi-twitter-x"></i> </a> <a href="#"
+              aria-label="Facebook"> <i class="bi bi-facebook"></i> </a> <a href="#" aria-label="Instagram"> <i
+                class="bi bi-instagram"></i> </a> <a href="#" aria-label="YouTube"> <i class="bi bi-youtube"></i> </a>
+            <a href="#" aria-label="TikTok"> <i class="bi bi-tiktok"></i> </a> </div>
+        </div> 
+        <div class="col-lg-2 col-md-6 col-6 footer-column">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#app">Mobile App</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#signup">Sign up</a></li>
+          </ul>
+        </div> 
+        <div class="col-lg-2 col-md-6 col-6 footer-column">
+          <h5>Exams</h5>
+          <ul>
+            <li><a href="#">BECE</a></li>
+            <li><a href="#">WAEC SSCE</a></li>
+            <li><a href="#">JAMB UTME</a></li>
+            <li><a href="#">SAT</a></li>
+            <li><a href="#">NECO SSCE</a></li>
+            <li><a href="#">Post-UTME</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6 footer-column">
+          <h5>Curriculum</h5>
+          <ul>
+            <li><a href="#">Physics</a></li>
+            <li><a href="#">Biology</a></li>
+            <li><a href="#">Chemistry</a></li>
+            <li><a href="#">Mathematics</a></li>
+            <li><a href="#">English Language</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6 footer-column">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="mailto:acebridge@gmail.com">Contact us</a></li>
+          </ul>
+        </div>
+      </div> <!-- COPYRIGHT -->
+      <div class="footer-bottom">
+        <p> &copy; <span id="currentYear"></span> AceBridge. All rights reserved. Learn Smart. Prepare Better.
+          Achieve More. </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="resourceModal" tabindex="-1" aria-labelledby="resourceModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div><span class="eyebrow">RESOURCE PREVIEW</span>
+            <h2 class="modal-title h4 mt-1" id="resourceModalTitle">Resource title</h2>
+          </div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="resourceModalBody"></div>
+        <div class="modal-footer"><button type="button" class="btn btn-outline-secondary rounded-pill"
+            data-bs-dismiss="modal">Close</button></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
